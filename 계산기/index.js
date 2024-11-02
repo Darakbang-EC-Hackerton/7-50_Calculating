@@ -49,7 +49,7 @@ function calc (num1, operator, num2) {
         case '+': outputNum = add(num1, num2); break;
         case '-': outputNum = minus(num1, num2); break;
         case 'x': outputNum = multiply(num1, num2); break;
-        case '/': outputNum = divide(num1, num2); break;
+        case '/': outputNum = div(num1, num2); break;
         case '%': outputNum = mod(num1, num2); break;
         case '^': outputNum = power(num1, num2); break;
         default: outputNum = '에러';
