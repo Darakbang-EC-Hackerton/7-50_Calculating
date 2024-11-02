@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'Cafe24Ssurround';
+    text-shadow: -1px -1px 1px #ffffff73, 2px 2px 4px rgba(94, 104, 121, .288);
+}
+body {
+    background-image: linear-gradient(to top, rgb(255, 242, 249), rgb(255, 229, 238));
+    height: 100vh;
+
+}
+#calc {
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgb(208, 234, 255);
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+}
+#OUTPUT {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 55px;
+    background-color: rgb(255, 248, 234);
+    margin: 0 0 20px 0;
+    border-radius: 35px;
+    text-align: end;
+    position: relative;
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+#prevExp {
+    color: gray;
+    height: 30px;
+    border-radius: 35px;
+    margin: 1px;
+    font-size: 25px;
+    background-color: rgb(255, 248, 234);
+}
+#input-field {
+    color: cornflowerblue;
+    height: 30px;
+    border-radius: 35px;
+    margin: 1px;
+    font-size: 30px;
+    background-color: rgb(255, 248, 234);
+}
+button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    margin: 3px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(220, 229, 255);
+    color: rgb(106, 153, 241);
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+}
+button:hover {
+    color: rgb(255, 238, 238);
+    background-color: rgb(170, 200, 255) !important;
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+button:active {
+    background-color: rgb(153, 189, 255) !important;
+    color: rgb(255, 238, 238);
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+.operator {
+    background-color: rgb(225, 239, 252);
+}
+#history {
+    height: 80px;
+    width: 375px;
+    border-radius: 30px;
+    margin: 20px 0 0 0;
+    color: floralwhite;
+}
+#calculate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

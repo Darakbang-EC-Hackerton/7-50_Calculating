@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>계산기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="calculate-container">
+    <div id="calc">
+        <div id="OUTPUT">
+            <div id="prevExp"> </div>
+            <div id="input-field"> </div>
+        </div>
+        <div id="calculate">
+            <div class="buttons">
+                <button id="reset" style="background-color: rgb(225, 239, 252)">C</button>
+                <button id="change" style="background-color: rgb(225, 239, 252)">+/-</button>
+                <button class="operator">^</button>
+                <button class="operator">%</button>
+            </div>
+            <div class="buttons">
+                <button class="numBtn">7</button>
+                <button class="numBtn">8</button>
+                <button class="numBtn">9</button>
+                <button class="operator">x</button>
+            </div>                                    
+            <div class="buttons">
+                <button class="numBtn">4</button>
+                <button class="numBtn">5</button>
+                <button class="numBtn">6</button>
+                <button class="operator">-</button>
+            </div>
+            <div class="buttons">
+                <button class="numBtn">1</button>
+                <button class="numBtn">2</button>
+                <button class="numBtn">3</button>
+                <button class="operator">+</button>
+            </div>
+            <div>
+                <button class="numBtn">0</button>
+                <button id="equalSign" style="background-color: rgb(225, 239, 252)">=</button>
+                <button class="operator">/</button>
+                <button id="hamster" style="background-color: rgb(225, 239, 252)">🐹</button>
+            </div>
+        </div>
+    </div>
+    <button id="history">기록 보기</button>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
