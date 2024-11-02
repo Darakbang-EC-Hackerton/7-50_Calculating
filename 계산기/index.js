@@ -37,8 +37,8 @@ function add(num1, num2) {return num1 + num2;}
 function minus(num1, num2) {return num1 - num2;}
 function multiply(num1, num2) {return num1 * num2;}
 function power(num1, num2) {return num1 ** num2;}
-function div(num1, num2) {return num2 === 0 ? '에러' : num1 / num2}
-function mod(num1, num2) {return num2 == 0 ? '에러' : num1 % num2}
+function divide(num1, num2) {return num2 === 0 ? '에러' : num1 / num2;}
+function mod(num1, num2) {return num2 == 0 ? '에러' : num1 % num2;}
 
 function calc (num1, operator, num2) {
     num1 = parseFloat(num1);
@@ -49,7 +49,8 @@ function calc (num1, operator, num2) {
         case '+': outputNum = add(num1, num2); break;
         case '-': outputNum = minus(num1, num2); break;
         case 'x': outputNum = multiply(num1, num2); break;
-        case '/': outputNum = div(num1, num2); break;
+        case '÷':
+        case '/': outputNum = divide(num1, num2); break;
         case '%': outputNum = mod(num1, num2); break;
         case '^': outputNum = power(num1, num2); break;
         default: outputNum = '에러';
@@ -95,7 +96,7 @@ historyExp.addEventListener('click', (event) => {
     if (history.length > 0) {
         prevExp.innerText = history[thisIndex];
         inputField.innerText = ''; 
-        thisIndex = currentIndex > 0 ? currentIndex - 1 : history.length - 1;
+        thisIndex = thisIndex > 0 ? thisIndex - 1 : history.length - 1;
     } else {
         prevExp.innerText = '기록이 없습니다.';
     }
